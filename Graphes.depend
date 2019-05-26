@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1558884896 source:c:\users\mocky\documents\ludus\ii.deuxième année\défi\défi sdl pointnclick\pointnclick\graphes\graphe.c
+
+1558888278 source:c:\users\mocky\documents\ludus\ii.deuxième année\défi\défi sdl pointnclick\pointnclick\graphes\main.c
+	<stdio.h>
+	<stdlib.h>
+	"graphe.h"
+
+1558885943 c:\users\mocky\documents\ludus\ii.deuxième année\défi\défi sdl pointnclick\pointnclick\graphes\graphe.h
+
