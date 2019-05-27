@@ -10,8 +10,8 @@ typedef struct tArrete
 
 typedef struct tGraphe
 {
-    int sommets[sizeof(int)];
-    tArrete arretes[sizeof(tArrete)];
+    int sommets[10];
+    tArrete arretes[];
 }tGraphe;
 
 

@@ -6,7 +6,7 @@
 int main()
 {
     tGraphe graphe1;
-    int i = 0, ordreGraphe = 0, lol = 0;
+    int i = 0, ordreGraphe = 0, saisie = 0;
 
     printf("Combien de sommets possede le graphe ?\n");
     scanf("%d",&ordreGraphe);
@@ -20,14 +20,14 @@ int main()
     {
         do
         {
-            printf("Entrez un sommet relier au sommet %d : ", i);
-            scanf("%d", &lol);
-            if((lol > i) && (lol <= ordreGraphe))
+            printf("Entrez un sommet relier au sommet %d (0 pour passer au suivant) : ", i);
+            scanf("%d", &saisie);
+            if((saisie > i) && (saisie <= ordreGraphe))
             {
                 graphe1.arretes[i].sommet1 = graphe1.sommets[i];
-                graphe1.arretes[i].sommet2 = lol;
+                graphe1.arretes[i].sommet2 = saisie;
             }
-            else if(lol != 0)
+            else if(saisie != 0)
             {
                 printf("Erreur de saisie\n");
             }
@@ -35,17 +35,8 @@ int main()
             {
                 printf("Sommet suivant\n\n");
             }
-        }while(lol != 0);
+        }while(saisie != 0);
     }
-
-//    do
-//    {
-//        printf("Entrez les sommets d'une arrete\n");
-//        scanf("%d,%d",&arrete1.sommet1, &arrete1.sommet2);
-//        graphe1.arretes[i].sommet1 = arrete1.sommet1;
-//        graphe1.arretes[i].sommet2 = arrete1.sommet2;
-//    }while((arrete1.sommet1 <= ordreGraphe) && (arrete1.sommet1 > 0) &&
-//           (arrete1.sommet2 <= ordreGraphe) && (arrete1.sommet2 > 0));
 
     printf("\nSommets = {");
     for(i=1; i<=ordreGraphe; i++)
